@@ -8,7 +8,7 @@ import {
  * LOG VOYAGER - PRODUCTION BUILD
  * - Rebranding na "LOG VOYAGER".
  * - Dodano link do GitHub i Copyright w stopce menu.
- * - Poprawiono widoczność logo.
+ * - Poprawiono widoczność logo (zmieniono kolor na biały).
  */
 
 const CHUNK_SIZE = 50 * 1024; // 50KB
@@ -146,7 +146,7 @@ const InfoModal = ({ onClose }: { onClose: () => void }) => {
               <div className="border-b border-white/5 pb-4">
                 <h4 className="text-white font-bold mb-1 flex items-center gap-2"><HelpCircle size={14} className="text-[#ff00ff]" /> Why not use Notepad?</h4>
                 <p className="text-xs text-slate-400 leading-relaxed">
-                  Standard editors try to load the whole file into RAM. For a 2GB file, your device will likely freeze or crash. Log Voyager streams the file, using only ~10MB of RAM regardless of file size.
+                  Standard editors try to load the whole file into RAM. For a 2GB file, your device will likely freeze or crash. Log Viewer streams the file, using only ~10MB of RAM regardless of file size.
                 </p>
               </div>
               <div className="border-b border-white/5 pb-4">
@@ -401,7 +401,7 @@ export default function App() {
         <div className="flex items-center gap-3">
           <button onClick={() => setShowInfoModal(true)} className="p-1.5 hover:bg-white/10 rounded-lg text-slate-400 hover:text-white transition-colors"><Menu size={20} /></button>
           <div className="flex items-center gap-3">
-            <div className="w-8 h-8 rounded bg-gradient-to-br from-[#00f3ff] to-blue-600 flex items-center justify-center shadow-[0_0_15px_rgba(0,243,255,0.3)]"><Box size={18} className="text-black" /></div>
+            <div className="w-8 h-8 rounded bg-gradient-to-br from-[#00f3ff] to-blue-600 flex items-center justify-center shadow-[0_0_15px_rgba(0,243,255,0.3)]"><Box size={18} className="text-white" /></div>
             <div>
                <h1 className="text-sm font-bold text-white tracking-wider neon-text">LOG VOYAGER <span className="text-[9px] bg-[#ff00ff] text-white px-1 rounded ml-1">PRO</span></h1>
                {file && <p className="text-[10px] text-[#00f3ff] font-mono">{file.name} ({formatBytes(fileSize)})</p>}
